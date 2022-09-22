@@ -12,7 +12,7 @@ FlightMapClass::~FlightMapClass() {
   size = 0;
   flightMap = NULL;
 }
-FlightMapClass::FlightMapClass(const FlightMapClass &Flights) {
+FlightMapClass::FlightMapClass(FlightMapClass &Flights) {
   size = Flights.size;
   flightMap = new list<flightRec>[size];
   for (int i = 0; i < size; i++) {
